@@ -12,7 +12,7 @@ public class Log : MonoBehaviour
         CreateDirectory();
     }
 
-    // ƒƒO•Û‘¶—p‚ÌƒfƒBƒŒƒNƒgƒŠ‚ğì¬
+    // ãƒ­ã‚°ä¿å­˜ç”¨ã®ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ä½œæˆ
     private void CreateDirectory()
     {
         filePath = Application.persistentDataPath + "/Log/";
@@ -23,15 +23,10 @@ public class Log : MonoBehaviour
         }
     }
     
-    // ƒƒOƒtƒ@ƒCƒ‹‚Ì•Û‘¶
+    // ãƒ­ã‚°ãƒ•ã‚¡ã‚¤ãƒ«ã®ä¿å­˜
     public static void Output(string fileName, List<string> logs)
     {
         var FullPath = Path.Combine(filePath, fileName);
-        if (!File.Exists(FullPath))
-        {
-            File.Create(FullPath).Close();
-        }
-
         File.WriteAllLines(FullPath, logs);
     }
 }

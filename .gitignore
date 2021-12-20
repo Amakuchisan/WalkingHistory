@@ -6,6 +6,9 @@
 Assets/AssetStoreTools*
 
 Assets/Oculus/
+Assets/TextMesh Pro/
+
+/[Bb]in/
 
 # Visual Studio cache directory
 .vs/

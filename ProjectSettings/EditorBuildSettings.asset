@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/ReWalking.unity
+    guid: 1c70995fe2b89fb458e6efa76a40afd8
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: dea9adb8dca6a47408b05267d4807f13, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 20149a982b18488498e47723be224513, type: 2}
